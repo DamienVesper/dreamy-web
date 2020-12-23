@@ -1,0 +1,30 @@
+html
+    block head
+        title= title + ' | Dreamy'
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        meta(http-equiv="Content-Type", content="text/html;charset=UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        
+        meta(name="title" content="Dreamy")
+        meta(name="description" content="Some description")
+
+        meta(property="og:title" content="Dreamy")
+        meta(property="og:description" content="Some description")
+
+        link(rel="icon", href="/assets/img/icon.png")
+        link(rel="stylesheet", href="/assets/css/site.css")
+        script(src="/javascripts/nav.js")
+    body
+        block header
+            nav
+                img(src="/assets/img/icon.png", alt="Dreamy logo").logo
+                ul.left
+                    li
+                        a(href="/")
+                            span Home
+                        a(href="/")
+                            span Home
+                        a(href="/")
+                            span Home
+                        a(href="/")
+                            span Home
