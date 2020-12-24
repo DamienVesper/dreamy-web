@@ -1,0 +1,10 @@
+.app>* {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0px;
+}
+
+.app h2,
+app h3 {
+    font-size: 20px;
+}
