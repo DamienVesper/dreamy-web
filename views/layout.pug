@@ -22,9 +22,22 @@ html
                     li
                         a(href="/")
                             span Home
-                        a(href="/")
-                            span Home
-                        a(href="/")
-                            span Home
-                        a(href="/")
-                            span Home
+                        a(href="/rules")
+                            span Rules
+                        a(href="/staff")
+                            span Staff
+                        a(href="/faq")
+                            span FAQ
+                        a(href="/support")
+                            span Support
+                ul.right
+                    li
+                        a(href="https://discord.dreamyy.cf")
+                        span Discord
+        main
+            .app
+                h1.page-title= title
+                block app            
+        footer
+            block footer
+                span.copyright-notice &copy; Dreamy 2020. All rights reserved.
