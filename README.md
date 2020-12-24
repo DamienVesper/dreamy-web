@@ -1,5 +1,5 @@
 # dreamy-web
-A website built for TheChoco published at https://dreamyy.cf.
+A website built for TheChoco.
 
 ## Installing dependencies
 Open up a terminal window and navigate to the directory of the project.
