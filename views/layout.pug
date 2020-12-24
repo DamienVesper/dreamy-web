@@ -12,28 +12,29 @@ html
         meta(property="og:description" content="Some description")
 
         link(rel="icon", href="/assets/img/icon.png")
-        link(rel="stylesheet", href="/assets/css/site.css")
-        script(src="/javascripts/nav.js")
+        link(rel="stylesheet", href="/css/site.css")
+        script(src="/js/nav.js")
     body
-        block header
-            nav
-                img(src="/assets/img/icon.png", alt="Dreamy logo").logo
-                ul.left
-                    li
-                        a(href="/")
-                            span Home
-                        a(href="/rules")
-                            span Rules
-                        a(href="/staff")
-                            span Staff
-                        a(href="/faq")
-                            span FAQ
-                        a(href="/support")
-                            span Support
-                ul.right
-                    li
-                        a(href="https://discord.dreamyy.cf")
-                        span Discord
+        header
+            block header
+                nav
+                    img(src="/assets/img/icon.png", alt="Dreamy logo").logo
+                    ul.left
+                        li
+                            a(href="/")
+                                span Home
+                            a(href="/rules")
+                                span Rules
+                            a(href="/staff")
+                                span Staff
+                            a(href="/faq")
+                                span FAQ
+                            a(href="/support")
+                                span Support
+                    ul.right
+                        li
+                            a(href="https://discord.dreamyy.cf")
+                               span Discord
         main
             .app
                 h1.page-title= title

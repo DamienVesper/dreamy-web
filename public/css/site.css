@@ -18,7 +18,7 @@ html {
 html,
 body {
     background-color: #000;
-    background-image: url("../images/background.jpg");
+    background-image: url("/img/background.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     width: auto;
