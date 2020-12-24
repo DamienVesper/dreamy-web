@@ -1,0 +1,225 @@
+/* Imports */
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab");
+
+* {
+    box-sizing: border-box;
+    font-family: "Roboto Slab", cursive;
+    transition: 0.3s;
+    overflow: hidden;
+    font-weight: normal;
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    overflow-y: auto;
+}
+
+html,
+body {
+    background-color: #000;
+    background-image: url("../images/background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: auto;
+    height: auto;
+}
+
+/* Header Navbar */
+header,
+footer {
+    background: rgba(0, 0, 0, 0.25);
+    box-shadow: #000 0px 0px 5px;
+}
+
+header {
+    display: flex;
+    height: auto;
+}
+
+header h1 {
+    width: 50%;
+    font-size: 20px;
+    margin-top: 0px;
+    font-weight: bold;
+}
+
+header nav {
+    flex: 1;
+}
+
+nav ul li {
+    padding: 8px;
+    width: auto;
+}
+
+nav ul.left>*,
+nav ul.right li:not(:last-child) {
+    border-bottom: 1px solid #000;
+}
+
+nav ul li a {
+    width: 100%;
+}
+
+nav ul li a[aria-disabled=true] {
+    color: #000;
+}
+
+nav ul li a:not([aria-disabled=true]):hover {
+    color: #000;
+}
+
+nav ul li a,
+footer dd a {
+    text-decoration: none;
+    color: #fff;
+}
+
+nav .logo {
+    width: 75px;
+}
+
+/* Main Article */
+main {
+    display: flex;
+    justify-content: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+main .app {
+    display: block;
+    margin: 25px 0px;
+    width: 97.5%;
+    min-height: 795px;
+    background-color: #fff;
+    box-shadow: #fff 0px 0px 15px;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+.app .page-title {
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+}
+
+/* Footer */
+footer {
+    padding: 8px;
+    height: auto;
+}
+
+dt span {
+    color: #aaa;
+    font-weight: bold;
+}
+
+dd {
+    padding: 2px 0px;
+}
+
+dd span:hover {
+    color: #1e90ff;
+}
+
+footer .copyright-notice {
+    color: #fff;
+}
+
+/* Responsive Design */
+@media only screen and (min-width: 768px) {
+    html {
+        overflow: hidden;
+    }
+
+    body {
+        overflow-y: auto;
+    }
+
+    /* Header Navbar */
+    nav ul li a {
+        width: auto;
+    }
+
+    nav ul li {
+        padding: 0px;
+        overflow: initial;
+    }
+
+    nav ul.left>*,
+    nav ul.right li:not(:last-child) {
+        border-bottom: none;
+    }
+
+    header {
+        height: 50px;
+    }
+
+    header nav,
+    nav ul {
+        margin: 0px;
+        height: 100%;
+        display: flex;
+    }
+
+    nav ul {
+        list-style-type: none;
+    }
+
+    header nav,
+    nav ul.left {
+        justify-content: flex-start;
+    }
+
+    header nav,
+    nav ul.right {
+        justify-content: flex-end;
+        margin-left: auto !important;
+    }
+
+    nav ul li {
+        border: none;
+        padding: 0px;
+    }
+
+    nav ul li,
+    nav ul li a {
+        height: 100%;
+        display: inline-block;
+    }
+
+    nav ul li a {
+        padding: 15px;
+    }
+
+    nav ul li a:hover:not([aria-disabled=true]) {
+        color: #fff;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    nav ul li a:active:not([aria-disabled=true]) {
+        background-color: rgba(0, 0, 0, 1);
+    }
+
+    html,
+    body {
+        width: 100%;
+        height: 100%;
+    }
+
+    /* Footer */
+    footer .link-table {
+        display: flex;
+        justify-content: space-evenly;
+        margin-bottom: 10px;
+    }
+
+    footer .copyright-notice {
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+    }
+}
