@@ -1,0 +1,16 @@
+extends layout
+
+mixin card(imgType, name, desc)
+    - let imgExt = imgType == 0 ? `.png`: imgType == 1 ? `.jpg`: `.gif`;
+    .team-card
+        img(src="/img/staff/" + name + imgExt, alt=name + "'s avatar")
+        .user-info
+            span= ` | ${name}`
+            p= desc
+
+block append head
+    link(rel="stylesheet", href="/css/pages/staff.css")
+block app
+    #owners
+        h2 Owners
+        +card(0, `TheChoco`, `Spicy jalapeno bacon ipsum dolor amet tri-tip alcatra swine frankfurter chislic, short loin drumstick strip steak tongue meatball brisket pork jowl spare ribs leberkas. Pork chop salami meatloaf rump. Pork belly drumstick spare ribs, pork loin tongue ribeye meatball burgdoggen short loin hamburger. Swine ribeye porchetta shank tongue buffalo venison tri-tip kevin andouille beef. Meatloaf burgdoggen andouille porchetta.`)

@@ -1,0 +1,71 @@
+.app h2 {
+    display: flex;
+    justify-content: center;
+    margin: 15px 0px;
+    border-bottom: 2px solid #000;
+    padding-bottom: 15px;
+}
+
+.team-card img {
+    width: 150px;
+    border-radius: 5px;
+    margin: 8px;
+}
+
+.user-info span {
+    display: inline-block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.user-info {
+    margin-left: 15px;
+    flex: 1;
+}
+
+#founders span::before {
+    content: 'Founder';
+}
+
+#owners span::before {
+    content: 'Owner';
+}
+
+#overseers span::before {
+    content: 'Overseer';
+}
+
+#guardians span::before {
+    content: 'Guardian';
+}
+
+#supervisors span::before {
+    content: 'Supervisor';
+}
+
+#founders span {
+    color: #a13eff;
+}
+
+#owners span {
+    color: #a13eff;
+}
+
+#overseers span {
+    color: #ff3e4e;
+}
+
+#guardians span {
+    color: #ff753e;
+}
+
+#supervisors span {
+    color: #ff3e85;
+}
+
+@media only screen and (min-width: 768px) {
+    .team-card {
+        display: flex;
+        min-height: 150px;
+    }
+}
